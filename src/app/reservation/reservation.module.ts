@@ -17,6 +17,6 @@ import { HomeModule } from '../home/home.module';
     ReactiveFormsModule,
     HomeModule,
     RouterModule
-  ]
+  ],
 })
 export class ReservationModule { }
