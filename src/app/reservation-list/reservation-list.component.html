@@ -1,7 +1,8 @@
+<app-home></app-home>
+
 <div class="container mt-5">
-    <div class="card-header text-center p-3 shadow-lg rounded mb-4 d-flex justify-content-between align-items-center">
+    <div class="card-header text-center bg-secondary text-white p-3 shadow-lg rounded mb-4">
         <h2>Reservation List</h2>
-        <button class="btn btn-primary shadow-sm rounded" [routerLink]="['/new']">Create new reservation</button>
     </div>
     <div class="card-body" *ngIf="reservations.length; else noReservations">
         <table class="table table-striped table-hover">
@@ -29,9 +30,6 @@
                 </tr>
             </tbody>
         </table>
-        <div class="d-flex justify-content-left gap-2 mt-5">
-            <button class="btn btn-secondary" [routerLink]="['/']">Back</button>
-        </div>
     </div>
 </div>
 

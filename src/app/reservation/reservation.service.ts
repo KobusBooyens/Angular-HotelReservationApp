@@ -37,10 +37,9 @@ export class ReservationService {
     this.updateLocalStorage();
   }
 
-  updateReservation(reservation: Reservation) {
-    const index = this.reservations.indexOf(reservation);
-
-    this.reservations[index] = reservation;
+  updateReservation(id: string, updatedReservation: Reservation) {
+    const index = this.reservations.findIndex(res => res.id === id);
+    this.reservations[index] = updatedReservation;
     this.updateLocalStorage();
   }
 
