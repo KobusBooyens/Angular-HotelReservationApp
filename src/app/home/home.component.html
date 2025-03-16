@@ -1,5 +1,7 @@
-<div>
+<div class="container mt-5 text-center">
     <h2>Welcome to the Hotel Reservation Dashboard</h2>
-    <button [routerLink]="['/new']">Create new reservation</button>
-    <button [routerLink]="['/list']">View all reservations</button>
+    <div class="d-flex justify-content-center gap-2 mt-5">
+        <button [routerLink]="['/new']" class="btn btn-primary">Create new reservation</button>
+        <button [routerLink]="['/list']" class="btn btn-primary">View all reservations</button>
+    </div>
 </div>
